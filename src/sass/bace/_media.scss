@@ -1,0 +1,145 @@
+@media (max-width: 992px){
+  .container {
+    padding: 0 20px;
+  }
+  .consultation {
+    padding: 70px 0 60px 0;
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 767px){
+  .promo {
+    min-height: 400px;
+    padding: 20px 0;
+    .header {
+      position: relative;
+      &__logo {
+        width: 33%;
+        align-items: center;
+        margin: 0 auto;
+      }
+      &__official {
+        width: 33%;
+        align-items: center;
+        margin: 0 auto;
+      }
+      &__contacts {
+        display: flex;
+        width: 33%;
+        align-items: center;
+      }
+    }
+    &__header {
+      font-size: 4.5rem;
+    }
+    &__wrapper {
+      align-items: center;
+      margin-top: 10px;
+    }
+    &__subheader {
+      margin-top: 0px;
+      font-size: 2rem;
+    }
+    &__icons {
+      margin-top: 10px;
+    }
+    .button_promo {
+      margin-top: 25px;
+    }
+  }
+  .advantage {
+    padding: 40px 0 50px 0;
+    &__wrapper {
+      margin-top: 1rem;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    &__item {
+      margin-top: 3rem;
+      width: 70%;
+    }
+    &__subtitle {
+      margin-top: 1rem;
+    }
+  }
+  .consultation {
+    padding: 20px 0;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 576px){
+  .promo {
+    min-height: 200px;
+    .header {
+      // position: relative;
+      display: block;
+      img {
+        display: block;
+        width: auto;
+        margin: 0 auto;
+      }
+      &__official {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+      }
+      &__contacts {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+      }
+      &__phone {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .container {
+      padding: 0 20px;
+    }
+    &__header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 2rem;
+    }
+    &__subheader {
+      margin-top: 0px;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    &__wrapper {
+      margin-top: 5px;
+    }
+    &__icons {
+      margin-top: 5px;
+      width: 100%;
+    }
+    .button {
+      margin: 0 auto;
+      margin-top: 5px;
+      display: block;
+    }
+    .button_promo {
+      width: 100%;
+    }
+    .title_left {
+      text-align: center;
+    }
+  }
+  .consultation {
+    .title_left {
+      font-size: 3rem;
+    }
+    &__descr {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+    .feed-form {
+      max-width: 100%;
+    }
+  }
+}

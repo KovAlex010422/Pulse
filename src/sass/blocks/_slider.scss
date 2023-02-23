@@ -1,0 +1,33 @@
+.slider{
+  padding: 80px 0;
+  &__inner {
+    width: 760px;
+    min-height: 600px;
+    margin: 0 auto;
+    position: relative;
+    transition: 1000 all;
+  }
+  &__slide {
+    position: absolute;
+    width: 100%;
+  }
+  &__arrow {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-left: 5px solid $main-color;
+    border-bottom: 5px solid $main-color;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .arrowL {
+    left: -50px;
+    transform: rotate(45deg);
+  }
+  .arrowR {
+    left: 800px;
+    transform: rotate(225deg);
+  }
+}

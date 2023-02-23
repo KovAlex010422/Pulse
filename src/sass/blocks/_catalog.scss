@@ -1,0 +1,107 @@
+.catalog {
+  padding: 80px 0;
+  &__tabs {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  &__tab {
+    width: 220px;
+    height: 50px;
+    border: 2px solid #d0d0d0;
+    margin: 0 5px;
+    transform: skewX(-25deg);
+    div {
+      transform: skewX(25deg);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 50px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #6b6b6b;
+    }
+  }
+  .tab-active {
+    background: $main-color;
+    border: 0;
+    div {
+      color: #ffffff;
+    }
+  }
+  &-item {
+    width: 300px;
+    height: 440px;
+    border: 2px solid #e8e8e8;
+    &__img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 140px;
+      height: 200px;
+    }
+    &__subheader {
+      margin-top: 15px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #0d0d0d;
+    }
+    &__descr {
+      width: 250px;
+      margin: 0 auto;
+      margin-top: 15px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #0d0d0d;
+    }
+    &__link {
+      display: block;
+      text-align: center;
+      margin: 10px 0 17px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+      color: #c70101;
+    }
+    hr {
+      margin: 0 auto;
+      width: 240px;
+      height: 1px;
+    }
+    &__footer {
+      margin: 0 auto;
+      margin-top: 17px;
+      width: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        width: 130px;
+        height: 40px;
+      }
+    }
+    &__price {
+      // margin: 0 auto;
+      // padding-left: 22px;
+      &-old {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        text-decoration-line: line-through;
+        color: #555555;
+      }
+      &-sale {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #050505;
+      }
+    }
+  }
+}
