@@ -14,6 +14,7 @@
     border: 2px solid #d0d0d0;
     margin: 0 5px;
     transform: skewX(-25deg);
+    cursor: pointer;
 
     div {
       transform: skewX(25deg);
@@ -34,23 +35,28 @@
       color: #ffffff;
     }
   }
-
+  &__items {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
   &-item {
     width: 300px;
     height: 440px;
     border: 2px solid #e8e8e8;
+    margin-top: 20px;
     padding: 20px 20px 26px 20px;
-    // overflow: hidden;
+    overflow: hidden;
     &__wrapper {
       width: calc(200% + 40px);
       display: flex;
     }
-
     &__content {
       width: 50%;
       margin-right: 0px;
       transform: translateX(-100%);
-      transition: .5s all;
+      transition: 0.5s all;
       &-active {
         transform: translateX(0%);
         margin-right: 20px;
@@ -65,13 +71,12 @@
       margin-left: 20px;
       margin-bottom: 0;
       transform: translateX(0%);
-      transition: .5s all;
+      transition: 0.5s all;
       list-style-type: none;
 
       &-active {
         transform: translateX(-100%);
         margin-left: 0px;
-
       }
 
       li {
@@ -82,7 +87,7 @@
         color: #555555;
         margin-bottom: 10px;
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           width: 5px;
           height: 5px;
@@ -102,7 +107,19 @@
         }
       }
       &-back {
-        
+        position: absolute;
+        top: 305px;
+        left: 50%;
+        transform: translateX(calc(-50% - 19px));
+        display: block;
+        margin: 0 auto;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        cursor: pointer;
+        color: $main-color;
       }
     }
 
@@ -143,6 +160,7 @@
       text-align: center;
       text-decoration-line: underline;
       text-transform: uppercase;
+      cursor: pointer;
       color: #c70101;
     }
 
@@ -167,7 +185,6 @@
     }
 
     &__price {
-
       // margin: 0 auto;
       // padding-left: 22px;
       &-old {
