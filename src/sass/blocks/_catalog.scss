@@ -37,9 +37,15 @@
   }
   &__items {
     margin-top: 55px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: none;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    &-active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
   &-item {
     width: 300px;
@@ -48,6 +54,7 @@
     margin-top: 20px;
     padding: 20px 20px 26px 20px;
     overflow: hidden;
+
     &__wrapper {
       width: calc(200% + 40px);
       display: flex;
