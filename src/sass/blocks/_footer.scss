@@ -1,7 +1,10 @@
 .footer {
   margin-top: 75px;
   position: relative;
-
+  &__map {
+    display: block;
+    margin: 0 auto;
+  }
   &__contacts {
     position: absolute;
     top: 0;
