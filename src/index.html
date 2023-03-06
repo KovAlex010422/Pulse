@@ -71,9 +71,9 @@
           Просто заполните форму заявки <br>и мы перезвоним вам в течении 10 минут
         </div>
         <form class="feed-form" action="#">
-          <input name="name" required type="text" placeholder="Ваше имя" class="input">
-          <input name="phone" required type="number" placeholder="Ваш телефон" class="input">
-          <input name="email" required type="email" placeholder="Ваш E-mail" class="input">
+          <input name="name" data-form="name" placeholder="Ваше имя" class="input">
+          <input name="phone" data-form="phone" placeholder="Ваш телефон" class="input">
+          <input name="email" data-form="email" placeholder="Ваш E-mail" class="input">
           <button data-modal="consultation" class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
         </form>
       </div>
@@ -535,9 +535,9 @@
       <div class="modal__subtitle">Просто заполните форму заявки</div>
       <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
       <form class="feed-form feed-form_mt25" action="#">
-        <input name="name" required type="text" placeholder="Ваше имя" class="input">
-        <input name="phone" required type="number" placeholder="Ваш телефон" class="input">
-        <input name="email" required type="email" placeholder="Ваш E-mail" class="input">
+        <input name="name" data-form="name" placeholder="Ваше имя" class="input">
+        <input name="phone" data-form="phone" placeholder="Ваш телефон" class="input">
+        <input name="email" data-form="email" placeholder="Ваш E-mail" class="input">
         <button data-modal="consultation" class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
       </form>
     </div>
@@ -547,9 +547,9 @@
       <div class="modal__subtitle">Ваш заказ:</div>
       <div class="modal__descr">Пульсометр Polar FT1</div>
       <form class="feed-form feed-form_mt25" action="#">
-        <input name="name" required type="text" placeholder="Ваше имя" class="input">
-        <input name="phone" required type="number" placeholder="Ваш телефон" class="input">
-        <input name="email" required type="email" placeholder="Ваш E-mail" class="input">
+        <input name="name" data-form="name" placeholder="Ваше имя" class="input">
+        <input name="phone" data-form="phone" placeholder="Ваш телефон" class="input">
+        <input name="email" data-form="email" placeholder="Ваш E-mail" class="input">
         <button data-modal="thanks" class="button button_submit">купить</button>
       </form>
     </div>
@@ -564,6 +564,7 @@
   <script src="./js/slider.js"></script>
   <script src="./js/catalog.js"></script>
   <script src="./js/modals.js"></script>
+  <script src="./js/validation.js"></script>
 </body>
 
 </html>
