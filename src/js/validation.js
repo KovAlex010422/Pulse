@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function(){
   const formInputs = document.querySelectorAll('.input'),
         formSubmit = document.querySelectorAll('.feed-form'),
-        formName = document.querySelectorAll('[data-form=name]'),
+        formName = document.querySelector('[data-form=name]'),
         formPhone = document.querySelectorAll('[data-form=phone]'),
         formEmail = document.querySelectorAll('[data-form=email]'),
-        inputLabel = document.createElement('label');
+        inputLabel = document.createElement('label'),
+        bn = document.querySelector('.b-name'),
+        bp = document.querySelector('.b-phone'),
+        be = document.querySelector('.b-email');
+
 
   formSubmit.forEach(form => form.addEventListener('submit', e => {
     e.preventDefault();
@@ -12,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function(){
     for(let input of formSubmit[1].elements){
       input.addEventListener('blur', it => {
         errorInput(it);
+
       })
     }
 
@@ -24,8 +29,9 @@ document.addEventListener('DOMContentLoaded', function(){
       } else {
         input.srcElement.style.border = '1px solid green';
         console.log(inputBorderStyle);
+        console.log(bn.value);
+        console.log(formName.value);
 
       }
     }
-
 })
