@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let inp of arrInputs) {
       let inpData = inp.dataset.form;
       // console.log(inp.value);
-      let inTrim = inp.value.trim();
+      let inpTrim = inp.value.trim();
       switch (inpData) {
         case 'name':
-          inputsCheking(inp, inpData, inTrim);
+          inputsCheking(inp, inpData, inpTrim);
           break;
         case 'phone':
           inputsCheking(inp, inpData);
@@ -37,16 +37,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  function inputsCheking(input, inputData, inTrim) {
+  function inputsCheking(input, inputData, inpTrim) {
     input.addEventListener('blur', e => {
-      if (input.value.length == 0 && input.value.trim().length == 0) {
-        input.style.border = '1px solid red'
-      } else if (inputData == 'name' && inTrim.length < 2) {
+      if (inputData == 'name' && inpTrim.length < 2) {
         input.style.border = '1px solid red'
         inputLabel.textContent = 'Введи дві або більше букв';
         inputLabel.style.fontSize = '16px'
         inputLabel.style.color = 'white'
         input.after(inputLabel);
+      } else if (inputData == 'phone') {
+        input.style.border = '1px solid red'
       }
       else {
         input.style.border = '1px solid green'
@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
   }
+  // input.value.length == 0 && input.value.trim().length == 0
 
   function inputsFilter(arr) {
     const arrInputs = [];
