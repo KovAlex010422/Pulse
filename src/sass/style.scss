@@ -10,6 +10,17 @@
   max-width: 950px;
   margin: 0 auto;
 }
+.labelErr {
+  color: white;
+  font-size: 16px;
+}
+
+.inputErr {
+  outline: 1px solid red;
+}
+.inputCor {
+  outline: 2px solid greenyellow;
+}
 
 @import 'blocks/promo';
 @import 'blocks/header';
